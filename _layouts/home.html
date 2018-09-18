@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<h2 class="collection-name">Books</h2>
+<ul class="collection-list">
+  {% for page in site.books reversed %}
+  <li>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="collection-name">Drawings</h2>
+<ul class="collection-list">
+  {% for page in site.drawings reversed %}
+  <li>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="collection-name">Objects</h2>
+<ul class="collection-list">
+  {% for page in site.objects reversed %}
+  <li>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="collection-name">Photos</h2>
+<ul class="collection-list">
+  {% for page in site.photos reversed %}
+  <li>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
